@@ -1,0 +1,513 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* border: none; */
+}
+
+:root {
+    --white: #fff;
+    --red: #ff1a1a;
+}
+html {
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* scroll-padding-top: -6rem; */
+}
+img {
+    width: 100%;
+    position: relative;
+}
+
+section {
+    top: 0;
+    width: 100%;
+    border-bottom: 6px solid rgb(67, 66, 66);
+    background-color: black;
+    padding: 0 1.5rem;
+}
+section h1{
+    font-size: 3rem;
+    color: white;
+}
+
+section p {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+/* Button */
+.membership{
+    padding: 16px;
+   /* border: 2px solid wheat; */
+   text-align: center;
+   /* width: 700px; */
+   margin-bottom: 16px;
+}
+.membership p{
+    font-size: 1.3rem;
+    padding: 12px;
+    margin-bottom: .3rem;
+}
+.membership form {
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+.membership form input {
+    width: 60%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 18px;
+    /* border: 1px solid #6c5ce7; */
+    outline: none;
+ }
+
+ .membership form a {
+
+    color: var(--white);
+    background-color: var(--red);
+    text-align: center;
+    padding: 18px;
+    font-size: 1.3rem;
+ }
+
+/* Home */
+.home {
+    border: 2px solid green;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 1.5rem;
+    background: url('home-img.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -20;
+} 
+
+.home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    box-shadow: inset 80px 60px 100px #000000, inset -80px -60px 100px #000000;
+}
+/* Header */
+header {
+    /* border: 2px solid whitesmoke; */
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    padding-top: 2rem;
+    z-index: 20;
+    /* gap: 30rem; */
+}
+header .nav {
+    /* border: 2px solid orange; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 8;
+    
+}
+
+header .nav img {
+    width: 130px;
+    margin-left: 3rem;
+}
+
+header .nav .btn {
+    color: var(--white);
+    font-size: 1.2rem;
+    background-color: var(--red);
+    align-items: center;
+    padding: .3rem .4rem;
+    margin-right: 3rem;
+    border: 1px solid white;
+    border-radius: .2rem;
+}
+
+header .nav .btn:hover {
+    background-color: rgba(241, 20, 20, 0.984);
+    border: none;
+}
+
+header .container {
+    margin-top: 10rem;
+    /* border: 2px solid purple; */
+    color: var(--white);
+    text-align: center;
+    /* margin: 60px auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 6rem auto; */
+    z-index: 10;
+    max-width: 850px;
+    padding: 16px 0;
+}
+header .container .content {
+    text-align: center;
+    /* border: 2px solid green; */
+    /* margin: 1rem auto; */
+}
+header .container .content h1{
+    /* border: 2px solid white; */
+    /* width: 500px; */
+    font-size: 3.3rem;
+    font-weight: 700;
+}
+header .container .content p {
+    font-size: 1.6rem;
+}
+
+
+/* TV container */
+.TV .TV-container {
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    /* text-align: center; */
+}
+
+.TV .TV-container .content {
+    border: 2px solid darkblue;
+    color: var(--white);
+    flex: 1 1 30rem;
+    /* text-align: center; */
+}
+.TV .TV-container .content h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.TV .TV-container .content p {
+    font-size: 1.8rem;
+}
+.TV .TV-container .image img {
+    z-index: 2;
+    width: 100%;
+}
+.TV .TV-container .image {
+    border: 2px solid darkred;
+    flex: 1 1 32rem;
+    padding: 1.6rem;
+}
+.TV .TV-container .image video {
+    position: absolute;
+   /* border: 1px solid red; */
+   right: 10.5rem;
+   top: 45rem;
+   z-index: 1;
+}
+
+/* Download Section */
+.download {
+    border: 1px solid red;
+}
+
+.download .container{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* justify-content: center; */
+    /* text-align: center; */
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+/* .download .container .slide-container img {
+    width: 100%;
+} */
+.download .container .slide-container {
+    border: 2px solid white;
+    flex: 1 1 30rem;
+}
+
+
+.download .container .content {
+    border: 2px solid green;
+    flex: 1 1 40rem;
+    color: var(--white);
+    padding: 1rem;
+}
+
+.download .container .content h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.download .container .content p {
+    font-size: 1.8rem;
+}
+.download .container .slide-container {
+    border: 3px solid purple
+}
+.download .container .slide-container .slide-content {
+    background-color: #000000;
+    width: 18rem;
+    height: 5.7rem;
+    display: flex;
+    gap: 1.5rem;
+    border: 2px solid orangered;
+    position: absolute;
+    top: 89rem;
+    left: 9.7rem;
+    /* z-index: 1000; */
+    color: var(--white);
+    align-items: center;
+    /* margin-bottom: 9rem; */
+    padding: 0 1rem;
+    border-radius: .7rem;
+}
+
+
+.download .container .slide-container .slide-content p{
+    /* flex: 1 1 40rem; */
+    color: white;
+    font-size: 1rem;
+}
+
+.download .container .slide-container .slide-content img{
+    /* flex: 1 1 18rem; */
+    width: 3.5rem;
+    height: 4.5rem;
+    
+}
+.download .container .slide-container .slide-content i {
+    /* flex: 1 1 10rem; */
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: .5rem;
+    border: .8px dotted transparent;
+    /* animation: circle 6s linear infinite normal ; */
+    transition: all 0.5s ease-out;
+    transform: rotate(180deg);
+}
+
+@keyframes circle {
+    /* 0% {
+        left: 0;
+        border: .8px dotted ;
+    } */
+    
+}
+
+/* stream */
+.stream {
+    border: 2px solid red;
+
+}
+
+.stream .container {
+    border: 2px solid green;
+    padding: 2.5rem 2rem;
+    /* margin: 0 2rem; */
+    /* text-align: left; */
+    
+}
+.stream .container .content {
+    border: 2px solid white;
+    width: 50%;
+}
+.stream .container .content h1 {
+    margin-bottom: 1rem;
+}
+.stream .container .content p {
+    font-size: 1.8rem;
+}
+/* Kids section */
+
+.kids {
+    /* padding: 3rem; */
+    border: 2px solid red;
+}
+
+.kids .container {
+    border: 2px solid green;
+    display: flex;
+    padding: 1rem 2.5rem;
+    /* margin: 0 1.5rem; */
+    flex-wrap: wrap-reverse;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.kids .container .image {
+    border: 2px solid white;
+    flex: 1 1 30rem;
+}
+
+.kids .container .image img{
+    width: 100%;
+    position: relative;
+}
+
+.kids .container .content {
+    margin: 1rem;
+    border: 2px solid green;
+    flex: 1 1 30rem;
+    /* text-align: center; */
+}
+
+.kids .container .content h1 {
+    margin-bottom: 1rem;
+}
+
+.kids .container .content p {
+    font-size: 1.8rem;
+}
+
+.faq{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3.5rem;
+}
+
+
+.faq h1{
+text-align: center;
+padding-top: 4.5rem;
+padding-bottom: 1.5rem;
+font-size: 3rem;
+}
+
+.faq .container {
+    /* display: inline-block; */
+    border: 2px solid red;
+    padding: 0 2rem;
+    width: 100%;
+    margin: 3rem 2.5rem;
+}
+.faq .container .content {
+    text-align: left;
+    border: 2px solid purple;
+    width: 800px;
+    display: flex;
+    margin: 1rem auto;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.faq .container .content .quest {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    color: var(--white);
+    font-weight: 400;
+    background-color: rgb(59, 58, 58);
+    /* text-align: left; */
+    padding: 18px;
+    position: relative;
+    /* margin-bottom: 3px; */
+    border: none;
+    border-bottom: .3px solid black;
+}
+
+.faq .container .content .quest span {
+    color: var(--white);
+    font-size: 1.6rem;
+    /* text-align: right; */
+}
+.faq .container .content .answer {
+    background-color: rgb(59, 58, 58);
+    padding: 24px;
+    display: none;
+}
+.faq .container .content .answer p {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+/* .faq .membership {
+    text-align: center;
+    width: 700px;
+    margin-bottom: 4rem;
+}
+.faq .membership p{
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.faq .membership form{
+    border: 4px solid white;
+    margin: 2px;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+.faq .membership input {
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    border: 1px solid #6c5ce7;
+    outline: none;
+
+}
+.faq .membership form a {
+    color: var(--white);
+    background-color: var(--red);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+} */
+
+/* footer */
+footer{
+    background-color: black;
+    color: rgb(184, 183, 183);
+    padding-bottom: 2rem;
+}
+footer h5 {
+    font-size: 1rem;
+    padding-top: 4rem;
+    padding-left: 10rem;
+}
+footer .container {
+    /* border: 2px solid red; */
+    margin: 0 9rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .container .box p {
+    /* flex: 1 1 10rem; */
+    padding-bottom: .6rem;
+}
+
+footer .f-text {
+    padding-left: 10rem;
+}
+
+
+
+
+
+/* RESPONSIVE SECTION */
+/* Media Queries */
+
+
+
+@media (max-width: 991px) {
+    
+}

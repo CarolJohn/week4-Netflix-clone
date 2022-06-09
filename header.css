@@ -1,0 +1,118 @@
+header {
+    border: 2px solid orangered;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    /* justify-content: space-around; */
+    /* position: relative; */
+    padding-top: 1.5rem;
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+    z-index: 2;
+}
+/* header nav */
+header .nav {
+   width: 100%;
+   border: 2px solid red;
+   display: flex;
+   /* flex-wrap: wrap; */
+   justify-content: space-between;
+   align-items: center;
+   /* margin: 1.5rem 0; */
+   /* padding: .3rem; */
+   z-index: 10;
+}
+
+header .nav img {
+   border: 2px solid green;
+   width: 130px;
+   padding: 0 .3rem;
+   margin-left: 2.5rem;
+}
+
+header .nav .btn {
+   color: var(--white);
+   background-color: var(--red);
+   font-size: 18px;
+   padding: .5rem .8rem;
+   border: .1rem transparent;
+   border-radius: .3rem;
+   text-align: center;
+   margin-right: 2.5rem;
+}
+
+header .nav .btn:hover {
+   background-color: #f50a0a;
+}
+/* header container */
+header .container {
+   border: 3px solid white;
+   display: flex;
+   flex-direction: column;
+   /* flex-wrap: wrap; */
+   /* gap: 1.5rem; */
+   /* margin-top: 160px; */
+   /* justify-content: center; */
+   margin: 0 auto;
+   align-items: center;
+   z-index: 20;
+   /* text-align: center; */
+
+}
+header .container .content {
+   position: relative;
+   border: 2px solid red;
+   color: var(--white);
+   text-align: center;
+}
+
+header .container .content h1 {
+   border: 2px solid green;
+   font-size: 3.2rem;
+   padding: 1rem 1rem;
+}
+header .container .content p {
+   border: 2px solid purple;
+   font-size: 1.7rem;
+}
+
+header .container .membership {
+   padding: 1rem;
+   border: 2px solid wheat;
+   text-align: center;
+   width: 700px;
+}
+header .container .membership p{
+   color: var(--white);
+   font-size: 1.3rem;
+   margin-bottom: 10px;
+}
+header .container .membership form{
+   /* border: 4px solid white; */
+   margin: 2px;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 100%;
+   justify-content: center;
+}
+header .container .membership input {
+   width: 70%;
+   font-size: 1rem;
+   font-weight: 400;
+   padding: 1rem;
+   /* border: 1px solid #6c5ce7; */
+   outline: none;
+
+}
+header .container .membership form a {
+   color: var(--white);
+   background-color: var(--red);
+   text-align: center;
+   padding: 1rem;
+   font-size: 1.5rem;
+}
