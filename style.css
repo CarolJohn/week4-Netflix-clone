@@ -42,18 +42,19 @@ section p {
     color: var(--white);
 }
 
-/* Button */
+/* Form */
 .membership{
-    padding: 16px;
-   border: 2px solid red;
+    padding: 10px 16px;
+   /* border: 2px solid red; */
    text-align: center;
    /* width: 700px; */
    margin-bottom: 16px;
 }
 .membership p{
+    /* border: 2px solid red; */
     font-size: 1.3rem;
-    padding: 12px;
-    margin-bottom: .3rem;
+    padding: 0 3rem;
+    margin-bottom: 15px;
 }
 .membership form {
     margin: 2px;
@@ -76,12 +77,16 @@ section p {
     background-color: var(--red);
     text-align: center;
     padding: 18px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+ }
+
+ .membership form a:hover {
+    background-color: rgb(227, 0, 0);
  }
 
 /* Home */
 .home {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     top: 0;
     height: 100vh;
     width: 100%;
@@ -106,7 +111,7 @@ section p {
 }
 /* Header */
 header {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     position: absolute;
     top: 0;
     height: 100vh;
@@ -133,28 +138,28 @@ header .nav .btn {
     color: var(--white);
     font-size: 1.2rem;
     background-color: var(--red);
-    align-items: center;
-    padding: .3rem .4rem;
+    text-align: center;
+    padding: .3rem .7rem;
     margin-right: 3rem;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: .2rem;
 }
 
 header .nav .btn:hover {
-    background-color: rgba(241, 20, 20, 0.984);
+    background-color: rgb(227, 0, 0);
     border: none;
 }
 
 header .container {
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     /* border: 2px solid purple; */
     color: var(--white);
     text-align: center;
-    /* margin: 60px auto; */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 100px auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     /* padding: 6rem auto; */
-    z-index: 15;
+    z-index: 20;
     max-width: 850px;
     padding: 16px 0;
 }
@@ -163,22 +168,29 @@ header .container .content {
     /* border: 2px solid green; */
     /* margin: 1rem auto; */
 }
-header .container .content h1{
+header .container h1{
+    text-align: center;
     /* border: 2px solid white; */
     /* width: 500px; */
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     font-weight: 700;
+    margin-bottom: 20px;
 }
-header .container .content p {
+header .container p {
+    text-align: center;
     font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+header .container .membership p{
+    font-size: 1.5rem;
 }
 
 
 /* TV container */
 .TV .TV-container {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     padding: 2.5rem;
@@ -186,7 +198,7 @@ header .container .content p {
 }
 
 .TV .TV-container .content {
-    border: 2px solid darkblue;
+    /* border: 2px solid darkblue; */
     color: var(--white);
     flex: 1 1 30rem;
     /* text-align: center; */
@@ -204,7 +216,7 @@ header .container .content p {
     width: 100%;
 }
 .TV .TV-container .image {
-    border: 2px solid darkred;
+    /* border: 2px solid darkred; */
     flex: 1 1 32rem;
     padding: 1.6rem;
 }
@@ -213,20 +225,19 @@ header .container .content p {
     height: 295px ;
     position: absolute;
    /* border: 1px solid red; */
-   right: 10.5rem;
-   top: 45rem;
+   right: 10.4rem;
+   top: 43rem;
    z-index: 1;
 }
 
 /* Download Section */
 .download {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .download .container{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
-    flex-wrap: wrap-reverse;
     /* justify-content: center; */
     /* text-align: center; */
     align-items: center;
@@ -237,13 +248,13 @@ header .container .content p {
     width: 100%;
 } */
 .download .container .slide-container {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     flex: 1 1 30rem;
 }
 
 
 .download .container .content {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     flex: 1 1 40rem;
     color: var(--white);
     padding: 1rem;
@@ -257,49 +268,32 @@ header .container .content p {
     font-size: 1.8rem;
 }
 .download .container .slide-container {
-    border: 3px solid purple
+    /* border: 3px solid purple */
 }
-.download .container .slide-container .slide-content {
-    background-color: #000000;
-    width: 18rem;
-    height: 5.7rem;
-    display: flex;
-    gap: 1.5rem;
-    border: 2px solid orangered;
-    position: absolute;
-    top: 89rem;
-    left: 9.7rem;
-    /* z-index: 1000; */
-    color: var(--white);
-    align-items: center;
-    /* margin-bottom: 9rem; */
-    padding: 0 1rem;
-    border-radius: .7rem;
-}
-
-
-.download .container .slide-container .slide-content p{
-    /* flex: 1 1 40rem; */
+.download .container .floating {
     color: white;
-    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border: 1.5px solid gray;
+    position: absolute;
+    padding: .3rem 1rem;
+    width: 300px;
+    justify-content: space-around;
+    border-radius: .5rem;
+    background-color: #000000;
+    left: 11.5%;
+    top: 1400px;
 }
 
-.download .container .slide-container .slide-content img{
-    /* flex: 1 1 18rem; */
-    width: 3.5rem;
-    height: 4.5rem;
-    
+.download .container .floating img {
+    height: 5rem;
 }
-.download .container .slide-container .slide-content i {
-    /* flex: 1 1 10rem; */
-    font-size: 1.2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: .5rem;
-    border: .8px dotted transparent;
-    /* animation: circle 6s linear infinite normal ; */
-    transition: all 0.5s ease-out;
-    transform: rotate(180deg);
+.download .container .floating p {
+    flex: 1 1 70rem;
+    font-size: 1rem;
+    
 }
 
 @keyframes circle {
@@ -312,19 +306,17 @@ header .container .content p {
 
 /* stream */
 .stream {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 }
 
 .stream .container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 2.5rem 2rem;
-    /* margin: 0 2rem; */
-    /* text-align: left; */
     
 }
 .stream .container .content {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 50%;
 }
 .stream .container .content h1 {
@@ -337,21 +329,20 @@ header .container .content p {
 
 .kids {
     /* padding: 3rem; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .kids .container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     padding: 1rem 2.5rem;
     /* margin: 0 1.5rem; */
-    flex-wrap: wrap-reverse;
     position: relative;
     justify-content: center;
     align-items: center;
 }
 .kids .container .image {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     flex: 1 1 30rem;
 }
 
@@ -362,7 +353,7 @@ header .container .content p {
 
 .kids .container .content {
     margin: 1rem;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     flex: 1 1 30rem;
     /* text-align: center; */
 }
@@ -376,7 +367,7 @@ header .container .content p {
 }
 
 .faq{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -394,14 +385,14 @@ font-size: 3rem;
 
 .faq .container {
     /* display: inline-block; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 0 2rem;
     width: 100%;
     margin: 3rem 2.5rem;
 }
 .faq .container .content {
     text-align: left;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: 800px;
     display: flex;
     margin: 1rem auto;
@@ -421,7 +412,7 @@ font-size: 3rem;
     position: relative;
     /* margin-bottom: 3px; */
     border: none;
-    border-bottom: .3px solid black;
+    /* border-bottom: .3px solid black; */
 }
 
 .faq .container .content .quest span {
@@ -438,6 +429,48 @@ font-size: 3rem;
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
+.faq .membership{
+    padding: 10px 16px;
+   /* border: 2px solid red; */
+   text-align: center;
+   /* width: 700px; */
+   margin-bottom: 16px;
+}
+.faq .membership p{
+    /* border: 2px solid red; */
+    font-size: 1.3rem;
+    padding: 0 3rem;
+    margin-bottom: 8px;
+    /* padding: 0 40px 20px;
+    margin: 0 50px; */
+}
+.faq .membership form {
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+.faq .membership form input {
+    width: 65%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 18px;
+    outline: none;
+ }
+
+ .faq .membership form a {
+
+    color: var(--white);
+    background-color: var(--red);
+    text-align: center;
+    padding: 18px;
+    font-size: 1.2rem;
+ }
+
+ .faq .membership form a:hover {
+    background-color: rgb(227, 0, 0);
+ }
 
 
 /* footer */
@@ -477,8 +510,8 @@ footer .f-text {
 
 
 
-@media (max-width: 991px) {
- .home {
+@media (max-width: 950px){
+ /* .home {
     height: 80vh;
     width: 100vw;
  }
@@ -486,76 +519,151 @@ footer .f-text {
  header {
     height: 80vh;
     width: 100vw;
+ } */
+ section {
+    padding: 0;
  }
-
- header .container {
-    margin-top: 3rem;
+/* header */
+ header .container h1{
+    margin-bottom: 10px;
  }
  header .nav .btn {
     margin-right: 4.5rem;
  }
-
- .TV .TV-container{
-    padding: 1rem;
- }
- .TV .TV-container .content {
-    flex: 1 1 10rem;
+header .container{
+    max-width: 590px;
+    padding: 8px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
-
+header .container p {
+    margin-bottom: 3px;
+}
+.membership{
+    margin-bottom: 8px;
+}
+.membership form {
+    margin: 1px;
+}
+.membership form input{
+    width: 80%;
+    margin-bottom: 8px;
+}
+.membership form a{
+    padding: 12px;
+}
+/* TV section */
+.TV .TV-container {
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
 .TV .TV-container .content h1 {
-    font-size: 2.5rem;
-} 
-
+    margin: 1.3rem 0;
+    font-size: 2.6rem;
+}
 .TV .TV-container .content p {
-    font-size: 1.3rem;
-} 
-.TV .TV-container .image {
-    border: 2px solid darkred;
-    flex: 1 1 12rem;
-    padding: 1.2rem;
+    font-size: 1.4rem;
 }
-.TV .TV-container .image video {
-    position: absolute;
-   right: 7.5rem;
-   top: 37rem;
-   width: 303.5px;
-   height: 252px;
-   z-index: 1;
+.TV .TV-container .image img {
+    /* border: 2px solid darkred; */
+    width: 42rem;
+    margin-bottom: 3rem;
+    padding: 0 3rem;
 }
-}
-@media (max-width: 1124px) {
-    .TV .TV-container{
-        padding: 1rem;
-     }
-     .TV .TV-container .content {
-        flex: 1 1 10rem;
-    }
-    
-    .TV .TV-container .content h1 {
-        font-size: 2.5rem;
-    } 
-    
-    .TV .TV-container .content p {
-        font-size: 1.3rem;
-    } 
-    .TV .TV-container .image {
-        border: 2px solid darkred;
-        flex: 1 1 12rem;
-        padding: 1.2rem;
-    }
-    .TV .TV-container .image video {
-        position: absolute;
-       right: 7.5rem;
-       top: 37rem;
-       width: 303.5px;
-       height: 252px;
-       z-index: 1;
-    }  
+.TV .TV-container .image{
+    padding: 0 1rem;
 }
 
-@media (max-width: 1448px) {
-    header .container .content h1 {
-        font-size: 2.8rem;
+/* download section */
+.download .container {
+    flex-wrap: wrap-reverse;
+    gap: 0;
+    padding: 0;
+    text-align: center;
+}
+.download .container .slide-container img{
+   width: 40rem;
+}
+.download .container .content h1{
+    font-size: 2.6rem;
+}
+.download .container .content p{
+    font-size: 1.4rem;
+}
+/* stream section */
+.stream .container .content{
+    text-align: center;
+    margin: 0 auto;
+}
+.stream .container .content h1{
+    font-size: 2.6rem;
+}
+.stream .container .content p{
+    font-size: 1.4rem;
+}
+/* kids section */
+.kids .container{
+    flex-wrap: wrap-reverse;
+    text-align: center;
+}
+.kids .container .image img{
+    width: 35rem;
+}
+.kids .container .content h1{
+    font-size: 2.6rem;
+}
+.kids .container .content p{
+    font-size: 1.4rem;
+}
+/* faq section */
+.faq{
+    padding: 0;
+}
+.faq h1{
+    font-size: 2.6rem;
+}
+.faq .container {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+.faq .container .content {
+    width: 630px;
+}
+.faq .container .content .quest{
+    padding: 12px;
+    font-size: 1.2rem;
+}
+.faq .container .content .quest span {
+    font-size: 1rem;
+}
+.faq .membership{
+    margin-bottom: 8px;
+}
+.faq .membership form {
+    margin: 2px;
+}
 
-    }
+.faq .membership form input{
+    width: 85%;
+    margin-bottom: 8px;
+}
+.faq .membership form a{
+    padding: 12px;
+}
+footer h5 {
+    padding-top: 4rem;
+    padding-left: 4rem;
+}
+footer .container{
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+}
+footer .container .box p{
+    font-size: .8rem;
+}
+footer .f-text {
+    padding-left: 4rem;
+}
 }
